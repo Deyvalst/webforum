@@ -1,0 +1,10 @@
+body {
+	background:center / 100% url(included/background.jpg) repeat-y;
+	--bs-body-color:#c7a59b;
+}
+header, .browse{
+	text-align: center;
+}
+.login {
+	float: right;
+}
