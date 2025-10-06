@@ -2,9 +2,34 @@ body {
 	background:center / 100% url(included/background.jpg) repeat-y;
 	--bs-body-color:#c7a59b;
 }
-header, .browse{
+.browse{
 	text-align: center;
+}
+header {
+	padding-left: 15%;
+	height: 15%;
+	background: rgb(27,24,34);
+	border-bottom: 8px solid rgb(105,56,72);
 }
 .login {
 	float: right;
+	text-align: center;
+}
+.button_login {
+	background: rgb(105,56,72);
+	border: unset;
+	width:60px;
+	height:35px;
+	border-radius: 0px 0px 40px 40px;
+	padding-bottom: 10px;
+}
+.category{
+	margin: 20px;
+	padding:10px;
+	background: rgb(27,24,34);
+}
+.category a{
+	color: silver;
+	text-decoration: none;
+	font-size: 20px;
 }

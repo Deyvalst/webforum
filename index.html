@@ -7,30 +7,62 @@
  <link rel="stylesheet" href="included/bootstrap.min.css">
 </head>
 <body>
- <header><h1>Веб Форум</h1>
- 
+ <header>
+  <h1>Веб Форум</h1>
  </header>
  <main class="container" style="--bs-gutter-x: 7rem;">
  <div class="login">
- <button>Войти</button></div>
-  <div class="route_topics">
-   <a href="">Разделы</a>
+   <p style="margin-top: -40px;">Вход</p>
+   <button class="button_login">
+    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-door-closed" viewBox="0 0 16 16">
+     <path d="M3 2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v13h1.5a.5.5 0 0 1 0 1h-13a.5.5 0 0 1 0-1H3zm1 13h8V2H4z"/>
+     <path d="M9 9a1 1 0 1 0 2 0 1 1 0 0 0-2 0"/>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16" hidden>
+     <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+     <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+    </svg>
+   </button>
   </div>
-  <div class="route_news">
-   <a href="">Новости</a>
-  </div>
-  <div class="route_rules">
-   <a href="">Правила</a>
-  </div>
-  <div class="route_support">
-   <a href="">Тех-поддержка</a>
-  </div>
+ <div class="row">
+  <div class="col-12">
   <p>
-  <div class="browse">
-   <span>Поиск тем</span><br>
-   <input type="text" class=""></input>
-  </div>
+   <h2>Разделы форума</h2>
   </p>
+  <div class="category">
+   <p>
+    <a href="">Раздел новостей</a>
+   </p>
+  </div>
+  <div class="category">
+   <p>
+    <a href="">Раздел вопросов</a>
+   </p>
+  </div>
+  <div class="category">
+   <p>
+    <a href="">Раздел публикаций</a>
+   </p>
+  </div>
+  <!-- <div class="route_news"> -->
+   <!-- <a href="">Новости</a> -->
+  <!-- </div> -->
+  <!-- <div class="route_rules"> -->
+   <!-- <a href="">Правила</a> -->
+  <!-- </div> -->
+  <!-- <div class="route_support"> -->
+   <!-- <a href="">Тех-поддержка</a> -->
+  <!-- </div> -->
+  </div>
+  <div class="col-4">
+  
+  <div class="browse">
+   <p>
+    <span>Поиск тем</span><br>
+    <input type="text" class="form-control form-control-sm"></input>
+   </p>
+  </div>
+  </div>
  </main> 
 </body>
 </html>
