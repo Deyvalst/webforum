@@ -1,6 +1,7 @@
 body {
 	background:center / 100% url(included/background.jpg) repeat-y;
 	--bs-body-color:#c7a59b;
+	--bs-body-font-family: corbel;
 }
 .browse{
 	text-align: center;
@@ -14,6 +15,8 @@ header {
 .login {
 	float: right;
 	text-align: center;
+	z-index: 1;
+	position: relative;
 }
 .button_login {
 	background: rgb(105,56,72);
@@ -32,4 +35,39 @@ header {
 	color: silver;
 	text-decoration: none;
 	font-size: 20px;
+}
+.headlogo{
+
+}
+.login_check{
+	margin-top: -35px;
+	position: absolute;
+	z-index: -1;
+	padding: 15px;
+	background: rgb(63,38,61);
+	outline: 5px solid rgb(105,56,72);
+	border-radius: 15px;
+}
+#button {
+	background: rgb(42,38,53);
+	border-radius: 10px;
+}
+.symbol_click{
+	margin: 10px;
+	padding: 0px;
+	background: unset;
+	border:unset;
+}
+
+.radial_fill{
+	background: rgb(42,38,53, 0.5);
+	outline: 3px solid rgb(42,38,53, 0.5);
+	border-radius: 30px;
+	transition: 0.5s;
+}
+.radial_fill:hover{
+	background: rgb(42,38,53, 1);
+	transition: 0.5s;
+	outline-width: 10px;
+	outline: 10px solid rgb(42,38,53, 1);
 }

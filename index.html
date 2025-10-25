@@ -8,22 +8,36 @@
 </head>
 <body>
  <header>
-  <h1>Веб Форум</h1>
+  <div class="row">
+  <h1>Веб Форум</h1></div>
+  <div class="row">
+  <image class="headlogo" src="logo.png" hidden><h3>Logo.png</h3></image>
+  </div>
  </header>
  <main class="container" style="--bs-gutter-x: 7rem;">
  <div class="login">
-   <p style="margin-top: -40px;">Вход</p>
-   <button class="button_login">
-    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-door-closed" viewBox="0 0 16 16">
-     <path d="M3 2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v13h1.5a.5.5 0 0 1 0 1h-13a.5.5 0 0 1 0-1H3zm1 13h8V2H4z"/>
-     <path d="M9 9a1 1 0 1 0 2 0 1 1 0 0 0-2 0"/>
-    </svg>
-    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16" hidden>
-     <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
-     <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
-    </svg>
-   </button>
-  </div>
+  <p style="margin-top: -40px;">Вход</p>
+  <button class="button_login">
+   <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-door-closed" viewBox="0 0 16 16">
+    <path d="M3 2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v13h1.5a.5.5 0 0 1 0 1h-13a.5.5 0 0 1 0-1H3zm1 13h8V2H4z"/>
+    <path d="M9 9a1 1 0 1 0 2 0 1 1 0 0 0-2 0"/>
+   </svg>
+   <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16" hidden>
+    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+   </svg>
+  </button>
+  <form class="login_check">
+   <div class="row">
+    <div class="col">
+     <span>Логин</span><br>
+     <input class="enter_data"></input><br>
+	 <span>Пароль</span><br>
+     <input class="enter_data" type="password"></input><p></p>
+	 <button type="button" class="btn btn-light btn-sm"><a href="userpage.html">Продолжить</a></button>
+   </div></div>
+  </form>
+ </div>
  <div class="row">
   <div class="col-12">
   <p>
@@ -55,13 +69,16 @@
   <!-- </div> -->
   </div>
   <div class="col-4">
-  
-  <div class="browse">
-   <p>
+   <div class="browse">
+    <p>
     <span>Поиск тем</span><br>
-    <input type="text" class="form-control form-control-sm"></input>
-   </p>
-  </div>
+    <input type="text" class="form-control form-control-sm enter_data"></input>
+	<button class="symbol_click">
+	 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="gray" class="bi bi-search radial_fill" viewBox="0 0 16 16">
+     <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+     </svg></button>
+    </p>
+   </div>
   </div>
  </main> 
 </body>
